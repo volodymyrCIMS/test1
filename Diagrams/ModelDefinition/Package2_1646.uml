@@ -1,0 +1,3654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b1668ca5-7e25-4bb0-919e-750f210ca544"
+  name="Commands"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="51403afb-a907-450a-9d84-869d9d2a348f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DCims.Commons.Commands"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="88ec34f4-7772-4e33-aa4d-cda86b26fcfb"
+        name="CommandBase"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8efe71ef-3cfc-4e4b-a053-8deb92b2b73c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandBase GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="717cd9a4-5a77-412e-af9a-4521342ab182"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="21f7767c-eb4a-44bd-a535-672b6cc5982d">
+                <propertyInstance
+                  Id="9b5099d0-a213-4ca0-a86a-7b36f9a36880"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="705a8ab4-910f-4487-a575-a4573548b29c">
+                <propertyInstance
+                  Id="7f7029d0-9b7e-4a46-90a9-bb65059efc95"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="67290431-66cd-4cb4-b246-82124fea6cd0">
+                <propertyInstance
+                  Id="163e72d0-21b2-42b2-b679-4c939fa80ffb"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="161c3000-8e4b-4014-8adb-c64e9b4e7b2b">
+                <propertyInstance
+                  Id="c1f15812-eaf0-4e76-b372-9f18946b68e7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8a071a01-d785-489d-a3a7-45e53ddfeeeb">
+                <propertyInstance
+                  Id="8f3c99e7-acc1-437e-b86f-36d3756b5c16"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="37542eb8-0a89-4fe9-afff-0a779e1fc4e3"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="1e1d5c6d-2b11-4b91-b919-42fb54499b03">
+                <referencesInternal>
+                  <reference
+                    Id="16083482-4835-4996-8cd2-d465b7e7af28"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandBase GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="02dc1a4e-8fe6-4ee1-a38d-fd244eb7955a"
+                    name="TContext"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a8eedc88-5549-4e51-8055-b3b4d0494906"
+            name="CommandBase"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3ad2c35f-f232-4129-b606-1de820c452bf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandBase GenericParameterCount%3D1) Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="486f7c60-2f9f-488b-87fa-0318652588a0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c0467bd-0a26-4008-a5a8-49b3a082dd4c">
+                    <propertyInstance
+                      Id="aa120be4-968f-475b-98b7-be31bf238818"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af060422-58da-4cb2-a1fa-a6c695aef457">
+                    <propertyInstance
+                      Id="cc9fc1c0-272a-4f39-b749-be06aac50b93"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2330b7d-c689-4a07-95e0-fdac604ef4c3">
+                    <propertyInstance
+                      Id="45748c98-a613-4af9-8088-185e93cd30fe"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf04ab96-d40f-4114-b540-60e33b99f090">
+                    <propertyInstance
+                      Id="fb682245-e071-413f-9d62-e3f080ead1b2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60d1a9f6-80e8-434e-8213-68452be74619">
+                    <propertyInstance
+                      Id="768957a5-0123-4050-ad36-6ea87bdede0b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85e07166-a0ba-43c0-ab05-159fdff5fa0c">
+                    <propertyInstance
+                      Id="86436e45-e1bb-4d2e-8c3d-9d59e5930b77"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="526d31b1-fbb8-433f-98b6-fb929cc18fb8"
+            name="GetDbContext"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d82238f1-bde6-4e9f-a92f-dce2a5cd17c7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandBase GenericParameterCount%3D1) Member%3DGetDbContext"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="81f9bcb9-7ba1-483e-8a51-138ee94a8d42"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cbbb9ca-a440-4b1a-82a5-1f35835cab27">
+                    <propertyInstance
+                      Id="1f071526-483d-4fee-a390-89dd86170688"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d9cc8e5-d629-47c7-a6bb-61ba6ae4f9ca">
+                    <propertyInstance
+                      Id="fe79f969-9c79-4be7-a08e-c3e96dd5c714"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b64b56f4-6b99-426a-a159-ee949c9818bb">
+                    <propertyInstance
+                      Id="5b537bc6-1992-40b0-88be-c17f165a72b7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf3168ad-ffc4-45c0-b232-f314a90339a1">
+                    <propertyInstance
+                      Id="df31bd51-944b-4946-b7b1-c715ad3750f5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f22ee937-1a26-4557-aca3-71ec74730f82">
+                    <propertyInstance
+                      Id="a4c89761-1e32-4471-aed6-9cb5eb134c42"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c70a755-7b7c-4eb4-8673-91959f010e1d">
+                    <propertyInstance
+                      Id="889daa15-508d-4bec-a6fb-1a63cb7720b6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7d30a0fb-1f6b-49e9-9a82-ff2032463eb3"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="02dc1a4e-8fe6-4ee1-a38d-fd244eb7955a"
+                      LastKnownName="TContext"
+                      LastKnownLocation="Package2_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="48ae7afa-8bf7-4b93-be86-c906b781165d"
+        name="CommandWithDbContextFactory"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8cf0b33d-161f-48d9-adca-23e8bcb014ad"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandWithDbContextFactory GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9358b1c7-bfd9-4a5c-8f14-40200e0d372d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="99d90bec-f2ba-4653-9b74-1d3e7436b93a">
+                <propertyInstance
+                  Id="92cf413a-2c33-4e5c-9e7b-9fdc25c64cbe"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df5f5d84-7835-475c-9ebf-aed2372b4750">
+                <propertyInstance
+                  Id="d3275503-ad4a-4f67-8737-51473e3a3c7d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fb3da977-2600-4319-aea5-7b7052357d05">
+                <propertyInstance
+                  Id="dc8823a6-4526-4113-92a1-c9ae680e269f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="38b049a8-3d61-4325-ba40-87f52fea7130">
+                <propertyInstance
+                  Id="af432ea7-7cbf-4fea-8944-751193098c16"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d53c87b8-fd31-49d7-91c0-2cef7c5a0c2e">
+                <propertyInstance
+                  Id="892ea3e1-20ef-4225-8630-42eb80cfd446"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="2fe329c2-f8f1-4a25-8446-cccf58933569"
+            isDerived="false"
+            sourceEndRoleName="CommandWithDbContextFactory"
+            targetEndRoleName="ICommandDbContextFactory"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="f9c208cf-c92a-436b-b1ce-022f05d2fe8f"
+              LastKnownName="ICommandDbContextFactory"
+              LastKnownLocation="Package3_1646.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac5e35b7-6cc0-4d9c-a082-8bb3a2d042d5"
+                  name="CommandWithDbContextFactory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="582d3303-f186-4ac0-b74c-6f87bd3a4b0d"
+                  name="ICommandDbContextFactory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="8c9ea3d5-6ac1-4cf1-acce-c3e814fc173a"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="a72d49d9-fbd5-4530-ba8b-7cc168288efe">
+                <referencesInternal>
+                  <reference
+                    Id="0c479bab-a3e4-4009-b242-936c9b0119aa"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandWithDbContextFactory GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="cb175c31-d274-4986-b158-220cc99cce92"
+                    name="TDbContext"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="394c0024-98f0-4bc0-8aa6-8acf9d7e0eb3"
+            name="_dbContextFactory"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="19ae0e65-c7b8-467c-b272-9ee6ff2c08ba"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandWithDbContextFactory GenericParameterCount%3D1) Member%3D_dbContextFactory"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="946eb35c-9991-4671-929b-797dc24948fa"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79862f2b-9ad0-48e9-8baf-40f6c7c390ac">
+                    <propertyInstance
+                      Id="e079b176-e314-435b-85f3-71a72003c73e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39230ad4-ea11-4c14-9604-5664542ed93e">
+                    <propertyInstance
+                      Id="d51093fa-16fb-4023-9789-6cc8254e6200"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43338e9f-742f-4a78-a329-d7ed5f6fa0cd">
+                    <propertyInstance
+                      Id="cb13411d-4963-43a6-8503-962d7955c661"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c5c1441-a810-41e5-be5d-b2fb9b165b1b">
+                    <propertyInstance
+                      Id="2214d183-c1a4-4b32-bf62-4fc6057d72d5"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4224bb2c-6d97-4887-8d3c-4f221cdff1ae">
+                    <propertyInstance
+                      Id="afc6e72e-687a-41c2-be7e-ec3422deaf64"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="27c1a6d4-2d50-4138-84a3-2e29b944aba6"
+                LastKnownName="ICommandDbContextFactory&lt;TDbContext‎&gt;"
+                LastKnownLocation="Package3_1646.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="59c59e15-a0ef-41fc-8e18-38e24390befc"
+            name="GetDbContext"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="62939f5f-c72d-4111-bcf1-b10b16775229"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandWithDbContextFactory GenericParameterCount%3D1) Member%3D(Name%3DGetDbContext OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="17e76065-71d4-40ac-b56e-f061fb1608a0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4b53af6-15b1-44c7-87f7-f2930fab5e92">
+                    <propertyInstance
+                      Id="a1de9778-cbb5-4939-b8ae-fe1cdd05b5e1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72e8c2dd-7b67-400c-9653-b3b6961c5ca8">
+                    <propertyInstance
+                      Id="4b0ad9b4-064e-4037-808e-b6a0d6f13206"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="490d61c6-5514-41a3-b680-561c4a1935ff">
+                    <propertyInstance
+                      Id="cae4731c-00b0-439e-bfd2-cd276ba01000"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b93dc1a-e172-45a4-9a4c-b0538191db80">
+                    <propertyInstance
+                      Id="b4321f3f-bf49-425d-8b06-9bcdcb58afc8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f493e26f-723e-4287-beb3-dbb5e10fe2b3">
+                    <propertyInstance
+                      Id="c4d4eb18-bcde-488a-a2bf-662c4ec35085"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87f7632b-47e8-4c5a-bd08-23aa3fe993f2">
+                    <propertyInstance
+                      Id="0a64093c-352d-4388-b321-b4f76c4ca6ac"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d11f9db-a741-40c2-a62d-782699697ba0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cb175c31-d274-4986-b158-220cc99cce92"
+                      LastKnownName="TDbContext"
+                      LastKnownLocation="Package2_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a68af57-86a4-4065-857e-260fc8230f89"
+                  name="identityInsertOn"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="55b35997-0f67-4552-bd99-530d0d97b0f7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandWithDbContextFactory GenericParameterCount%3D1) Member%3D(Name%3DGetDbContext OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3DidentityInsertOn"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f3dc60d9-01d1-43bc-ba38-0f2e0fed933f"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package4_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a5693a7d-0c96-489a-964a-a0db156ccbe1"
+            name="GetDbContext"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0cce9a3b-a7b7-4f58-b072-0e386c79e818"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandWithDbContextFactory GenericParameterCount%3D1) Member%3DGetDbContext"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dbf936e1-6eb9-492f-96c1-b76655d7cd90"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f129833-8ac1-4dfa-87af-df605ba7cf0e">
+                    <propertyInstance
+                      Id="608a71fc-7c19-4aa0-afa0-9166da86ce03"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e842acd9-c042-4e2c-911f-0c520df43ac3">
+                    <propertyInstance
+                      Id="8a559a5a-a86e-4e9e-8489-2a77f603a9e0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4eafa32-7294-486c-a237-921eab3e4966">
+                    <propertyInstance
+                      Id="4c1ada0f-dee4-4de8-be85-71479e8ba3fa"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5f1f4de-4775-4d79-8f82-b0e4bb3c295c">
+                    <propertyInstance
+                      Id="01667c4a-07b2-4ddb-9077-5355541e5943"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="005cc298-5329-4c7f-b052-d3e56c6c0301">
+                    <propertyInstance
+                      Id="7fa3e7d6-7cf3-4249-b6a2-e1844e8f49f3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4151c82d-3e0e-4048-b53a-17b8393b4a66">
+                    <propertyInstance
+                      Id="eb0f4b3a-6850-4fbd-8bd5-d6ec291c80f3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7a24c106-d254-446c-bac1-2f8158b28334"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cb175c31-d274-4986-b158-220cc99cce92"
+                      LastKnownName="TDbContext"
+                      LastKnownLocation="Package2_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="90126647-342f-4f47-9fa8-4d5616b813ce"
+            name="CommandWithDbContextFactory"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="888bef65-189b-4c50-91a4-0f8c766d1675"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandWithDbContextFactory GenericParameterCount%3D1) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandWithDbContextFactory GenericParameterCount%3D1) ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c42b57e2-f10e-42da-b000-56db07deeeaa"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da80b6fc-196f-4463-9606-b3f35c4a17ad">
+                    <propertyInstance
+                      Id="deedf39a-f9b5-4b8c-9224-fb04c7d34faf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="138be584-b3d6-4ebc-bff4-f1c98ed61d7f">
+                    <propertyInstance
+                      Id="df406c27-953b-4705-a8ff-7c2b9faab7c0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f6a7f8f-de6c-469a-9205-7af3ea3ffe82">
+                    <propertyInstance
+                      Id="947d724a-edfb-4555-a529-f7766417314a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8956d0ec-906d-41b1-8215-e4420d80b702">
+                    <propertyInstance
+                      Id="0002e715-0830-425a-8c08-3cab811e8ccf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a06530f4-9ef5-49cc-b792-5724898e6613">
+                    <propertyInstance
+                      Id="54349133-e262-4ce6-9fe1-3f62b7b9af48"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75f2cc39-9d94-45f8-b7b9-b2e2f1d7ad09">
+                    <propertyInstance
+                      Id="47bc686e-1c94-4799-b53a-fec95b334ba8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6025772-9a50-426f-b862-31fc077c4b56"
+                  name="dbContextFactory"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0979c2a7-b655-4021-a356-89c42004dbaa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandWithDbContextFactory GenericParameterCount%3D1) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandWithDbContextFactory GenericParameterCount%3D1) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3DdbContextFactory"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="27c1a6d4-2d50-4138-84a3-2e29b944aba6"
+                      LastKnownName="ICommandDbContextFactory&lt;TDbContext‎&gt;"
+                      LastKnownLocation="Package3_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ea0007b8-4019-4db2-81e7-fed851c58b5d"
+        LastKnownName="DbContexts"
+        LastKnownLocation="Package3_1646.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="051de810-0d4b-4bf1-8087-eb73232340f6"
+        name="InsertCommand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2488d5bf-fe29-47b9-907d-3d4b2fa970e3"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="76c567f8-a544-4265-944a-211f3bc462d7"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ecad2364-f9f4-4594-8172-56e82142f758">
+                <propertyInstance
+                  Id="e9575c47-0bed-4908-a64c-3292b6baf707"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="14cdec89-08ee-42d0-8148-ee726147c8e2">
+                <propertyInstance
+                  Id="6e02e981-f6d5-48b7-96b6-9be7ab89b1f5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="70712cf8-6cc9-48ba-bdd6-9547706b3af5">
+                <propertyInstance
+                  Id="79c4cf24-e05c-4faa-acf4-548f35c368c1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="536fe3df-560c-4255-a0e9-d3aed0f0479a">
+                <propertyInstance
+                  Id="37d723ce-e99a-4efd-a139-d2f0818ded23"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="262fbc55-90b0-43ca-904c-1f4c71d94c61">
+                <propertyInstance
+                  Id="ad1146f9-9ee0-4d32-8cd1-1da3909adc95"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="7c720b17-3810-4ab1-8611-c4f70f924a35">
+            <interfaceMoniker
+              Id="3967f0d9-f8cb-4c96-95d4-7291162c7d2d"
+              LastKnownName="ICommand"
+              LastKnownLocation="Package2_1646.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="bc643e6e-b1de-4847-b222-598d828e23d9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b9e17967-f173-447e-8eb2-c382bae76613"
+              LastKnownName="CommandWithDbContextFactory&lt;TDbContext‎&gt;"
+              LastKnownLocation="Package2_1646.uml" />
+          </generalization>
+          <generalization
+            Id="a8a4e625-d5e2-459d-8402-7403822f362c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="48ae7afa-8bf7-4b93-be86-c906b781165d"
+              LastKnownName="CommandWithDbContextFactory"
+              LastKnownLocation="Package2_1646.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="be84a962-c555-42f5-85e0-ec9cd5608051"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="80d1ab33-8bd9-4efe-b730-7ec0abb50dbc">
+                <referencesInternal>
+                  <reference
+                    Id="e9fb42ee-40d8-4193-aeb8-600622207ddf"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="e048d4e4-ed42-4dc1-89e2-14a15203ff8c"
+                    name="TDbContext"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="ff696b4e-63be-4b2d-8d59-2cf403bad82b">
+                <referencesInternal>
+                  <reference
+                    Id="0eb7aa77-a85c-4a96-8d37-a48cfccfbe2c"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) ParameterIdentifier%3D1"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="fe550a05-264b-4823-8f90-92d2d86336bd"
+                    name="TEntity"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="55c25938-eef6-4981-b288-cfef87ddee6f">
+                <referencesInternal>
+                  <reference
+                    Id="568d1161-55db-4807-b620-b6b0c5553891"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) ParameterIdentifier%3D2"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="c39b7eb8-faf8-4804-96c7-cac7cdcea200"
+                    name="TId"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="491bc157-99b1-418a-ae7c-8d17a5c3035e"
+            name="_entityToAdd"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ef33f392-cf48-40e8-8f67-d80b1fd23e0e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) Member%3D_entityToAdd"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e8ca421d-b11f-4a76-b4ed-d28b65b15725"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b605370a-3672-4d21-b931-064b65cd2f4d">
+                    <propertyInstance
+                      Id="3098f3e0-46ea-46f0-8c84-d659ce382067"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41f25f84-9c6f-4d08-83f8-e87cdc9f451a">
+                    <propertyInstance
+                      Id="63cf9656-9c84-4ab8-914b-a6235b5d6d1d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d306d13-47ef-4cc3-83d4-e176f93c00db">
+                    <propertyInstance
+                      Id="44ddb888-c406-4db3-abd9-1121ca2b0c2e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4e66101-b251-4210-b711-12ffe57a3a45">
+                    <propertyInstance
+                      Id="66ffa87c-4dda-4d3f-a0a6-17ee00a9fa9a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94aeb40a-c04e-4ddb-b02b-8319e4df12d6">
+                    <propertyInstance
+                      Id="b2bbe95a-2448-42e2-8c03-7dea747ffe84"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fe550a05-264b-4823-8f90-92d2d86336bd"
+                LastKnownName="TEntity"
+                LastKnownLocation="Package2_1646.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c9d8dff3-a244-41af-a164-e27ece054bad"
+            name="InsertCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="764a2346-b6bf-4e24-a8d0-5a1b3ac9835a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) ParameterIdentifier%3D1)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b9e20197-1321-4c09-a062-e4a1159a5aee"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="035ff791-d5ce-4c10-9d6f-4d26110b545e">
+                    <propertyInstance
+                      Id="54d0bb6c-7bab-41fd-ba69-a611dc616f40"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00d3ef85-6494-45c4-adca-676b7b7abb24">
+                    <propertyInstance
+                      Id="ec061ebb-8750-47a2-beda-57665d37fdc0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="751a628c-38e0-43fa-92f7-df143a8fb095">
+                    <propertyInstance
+                      Id="11248163-f847-4b4f-9fed-4f42706d3ac2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92ff6da7-20b2-407b-81c8-45ad847ceb45">
+                    <propertyInstance
+                      Id="f29f337b-c8dd-4fa8-8aa9-c6f8205c96fd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="379b5d60-d444-433f-af3a-1b84c9544e42">
+                    <propertyInstance
+                      Id="c0028098-ff9c-4043-9b64-b2d485504893"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d432c9a-6190-4869-aa0d-c2fcd35daf1c">
+                    <propertyInstance
+                      Id="f0c521f5-8805-4723-9fd3-548af7ae38f8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="623fc5bd-1bc4-4164-8369-3ca803420b44"
+                  name="entityToAdd"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1c65a0c6-9759-4842-acff-21f53e87ccb3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) ParameterIdentifier%3D1)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3DentityToAdd"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fe550a05-264b-4823-8f90-92d2d86336bd"
+                      LastKnownName="TEntity"
+                      LastKnownLocation="Package2_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="55c8d7af-3822-4ab1-acfe-91138cae7110"
+                  name="dbContextFactory"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="aa9cc244-e6a0-4657-bf65-29e0e8f6fb68"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) ParameterIdentifier%3D1)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3DdbContextFactory"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="27c1a6d4-2d50-4138-84a3-2e29b944aba6"
+                      LastKnownName="ICommandDbContextFactory&lt;TDbContext‎&gt;"
+                      LastKnownLocation="Package3_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4089b6f3-9e95-49a9-9deb-7710a18efcb0"
+            name="Do"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3c6daa0c-506c-416b-a736-abf6795fb696"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) Member%3DDo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9cf0d16c-97a2-4ab2-bd35-638ff49aee4b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5650c307-da64-40ba-b309-0dadd42d9d35">
+                    <propertyInstance
+                      Id="3f446c51-2ebd-464f-bdc0-94af50101026"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f442869a-db76-4d03-bd18-93466121123f">
+                    <propertyInstance
+                      Id="abdde863-01d5-4d28-8708-ca1d6f25ba4b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4885430e-35e8-4e40-ad8f-27bd45f87761">
+                    <propertyInstance
+                      Id="fc06bf34-c1d9-4f64-a372-feb00c83d958"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8eed0abf-9097-4fd5-a0e8-d5c2c3dd276c">
+                    <propertyInstance
+                      Id="c34a6bf0-c295-45c0-a40b-785d9a5fc22f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ef8db87-b15c-401a-84f0-398181d3fc0f">
+                    <propertyInstance
+                      Id="e288e099-1eda-4e28-b571-723a073632d2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c879a727-b07a-4f19-ba7f-af298e283bdb">
+                    <propertyInstance
+                      Id="55215c2a-fadd-48e5-a5fe-64c2f9c66e3d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="dff1b7d5-5b23-4899-8cdb-3b9b89065e0c"
+            name="Undo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9271bb3f-a267-48b4-90bd-957743c684a6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DInsertCommand GenericParameterCount%3D3) Member%3DUndo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b918e39-eb2f-445f-9dda-280fd7e25431"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b31ab822-fce8-44d0-a6d6-45dca4c8cde4">
+                    <propertyInstance
+                      Id="3cf52244-5344-46a8-b5e0-816a63844764"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c03c2a63-a7ec-40d1-8eaf-cd974d76a3b6">
+                    <propertyInstance
+                      Id="bef1ffe8-cc73-4b31-9ae8-6ef1093a2cea"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4acd756e-8c17-4614-b1ba-1bd3bc8f6a0d">
+                    <propertyInstance
+                      Id="2e20e728-6f45-4fc9-9e59-ebe775742372"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8114665-8404-4f70-b2ec-4fb0ae1e6e74">
+                    <propertyInstance
+                      Id="2d6447f0-90aa-4d6e-816b-c6e6532e401e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6537785-170f-4d01-9e0b-a526419bb12e">
+                    <propertyInstance
+                      Id="9be130f1-67e3-4b29-8ec2-404a260aefe6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42405539-8b4f-4b20-aefd-0e8d89c7f107">
+                    <propertyInstance
+                      Id="50be000a-706b-411c-be92-8cdc648e225b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3967f0d9-f8cb-4c96-95d4-7291162c7d2d"
+        name="ICommand"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="521305ac-70d1-4b87-8a82-bcf134f1cf31"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3DICommand"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a5f71767-acd2-4dad-9d95-51b5440b1e56"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="373a71ac-8fc7-40a0-b7be-db57a7f12e9a">
+                <propertyInstance
+                  Id="6309093b-6c63-4d31-b421-f561edae771a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ea85f47-07fc-4b5d-8fda-80de7f0baf8e">
+                <propertyInstance
+                  Id="8f456c23-809b-4eb7-a79e-12084320f73c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b72f6fa8-c7ca-4ef9-8594-594c2ac177e9">
+                <propertyInstance
+                  Id="ceed636f-26be-4169-b877-376967244f72"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e78d798-19f2-46b5-a98f-9e210c27e2df">
+                <propertyInstance
+                  Id="155fd3d3-f0e9-4a2e-95bf-2bcdf5ed1c10"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="b9a9d2c2-53cf-4aac-9840-d57b894d56d1"
+            name="Do"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c6a57c18-65b7-4d45-a759-163209143910"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3DICommand Member%3DDo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fe27adc5-7dc7-4fd2-8e24-49c2cf2207da"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c15863d-d369-4934-ae61-a2c66e8d6357">
+                    <propertyInstance
+                      Id="55e5f090-9361-478a-9fed-3ea547e3b397"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ede72fa-e145-4e46-9b60-09bf6778c14b">
+                    <propertyInstance
+                      Id="1502abf4-baf3-4656-984c-19d869a16d2b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03735a61-5e22-4c20-8f54-ad74095ef3cf">
+                    <propertyInstance
+                      Id="3aad3b3f-ee31-4968-b4b3-e6e53515bf08"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2823aea-86d3-4a5a-82aa-6645439c4721">
+                    <propertyInstance
+                      Id="33c47c2d-3265-449d-9659-5dc7225ccf29"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a3fb9ce-c264-4802-b70e-24fb43958f20">
+                    <propertyInstance
+                      Id="04c3afed-d5cb-440f-a013-48b35c39f45b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="145d1c81-15cb-41f9-9c2f-4959326dbca2">
+                    <propertyInstance
+                      Id="8d8cf36f-dcc1-4be7-be2b-7953fa79c2dd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="3e250625-a411-4a4e-926e-c259ae8caf1f"
+            name="Undo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9d94e4e6-4ed1-4d93-82cf-ea9a56321fa0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3DICommand Member%3DUndo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="96244281-302e-45f2-b8cd-48f8db82d98b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aad49a69-d5f6-404a-9149-d6141d8eefcb">
+                    <propertyInstance
+                      Id="2baa8e44-0ad4-4fe4-b7e3-22d6624eb9bd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ac9d6f4-ed42-44f5-96b5-f7f1ed101095">
+                    <propertyInstance
+                      Id="48e939eb-593a-4192-8faf-2fdb24f1ac42"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33204aa8-8301-4479-a572-ad97a94d40fc">
+                    <propertyInstance
+                      Id="432b77ca-45e8-43d8-928d-20822b01a1d2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2981b876-99f4-4aff-a4aa-50cefb4c0de1">
+                    <propertyInstance
+                      Id="347d5a73-17bd-4fc1-a5f6-8feb8b2da6e9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="452074ab-0699-40f0-bb08-4048eb1cd68f">
+                    <propertyInstance
+                      Id="2cc39953-38d7-4c1a-98f5-fc169ae09485"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dcf872d7-c688-4b7f-871e-a63983b2132c">
+                    <propertyInstance
+                      Id="34c5a6e4-1f7d-46f3-9c9c-813bfb264fe3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b9e17967-f173-447e-8eb2-c382bae76613"
+        name="CommandWithDbContextFactory&lt;TDbContext‎&gt;"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="acd3b04c-cf4e-401c-a41d-e2529b006eea"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8471e29b-0c37-455f-a401-6e28538f1cbd">
+                <propertyInstance
+                  Id="f2c35d05-afda-4c08-8221-05c6fe5d2177"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2fe254bc-6b62-414a-aa2f-81c9ed47afb5">
+                <propertyInstance
+                  Id="ae50f57d-0d33-408a-9d2a-414c392157cf"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ca67ddb-bfbc-44ae-bfe9-7a5891301a6e">
+                <propertyInstance
+                  Id="4eb13d0f-62b0-4a39-921a-d6591b0af0be"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4990a097-1a12-49fe-b0e5-48677343a11e">
+                <propertyInstance
+                  Id="87b8a081-18d6-4ded-9382-82e82aa54897"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b3f05a8-e91f-450b-ba6c-0fa994e882e3">
+                <propertyInstance
+                  Id="847a1ce7-89b2-409d-9229-ed3059162344"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="137ac6b6-c590-4324-b10b-257cbc1e3be2">
+            <redefinableTemplateSignatureMoniker
+              Id="8c9ea3d5-6ac1-4cf1-acce-c3e814fc173a"
+              LastKnownLocation="Package2_1646.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="d3c97642-2e03-463c-b608-283974e2df5d">
+                  <actuals>
+                    <classMoniker
+                      Id="2372ebbc-9561-4d94-a983-a58c4cfa247d"
+                      LastKnownName="TDbContext"
+                      LastKnownLocation="Package2_1646.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="a72d49d9-fbd5-4530-ba8b-7cc168288efe"
+                      LastKnownLocation="Package2_1646.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6c1b595a-c4b1-44ca-97a5-0081d89a87f6"
+        name="UpdateCommand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1313f8d5-37d0-42b1-a94d-ba0cea877dc8"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="97a0bfa6-5b98-406f-86b4-43238e3b50a9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cd22e8ab-b0c5-4a66-b7d4-766c900131a7">
+                <propertyInstance
+                  Id="9befd060-1f06-4405-890c-b99093df141d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9b4ca543-045f-4966-bf3a-5f50a1ebcf2d">
+                <propertyInstance
+                  Id="66749ba7-ef56-4bf6-8a1e-2ee0dbf38a1a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3fde322a-7745-4447-a104-f34c6c6f9a56">
+                <propertyInstance
+                  Id="afbcb9bc-ca7c-4448-a565-1fb3d4a516e0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="97532b72-be5a-44a0-92c3-60319971089f">
+                <propertyInstance
+                  Id="00493ff9-ef97-4998-b610-25a1e9077c50"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a3ee3e58-a792-417c-b77a-4486fe87b616">
+                <propertyInstance
+                  Id="1a33c0a5-935d-481c-9c73-2c5842574021"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="da7a5deb-9317-4999-8796-d2cb6533e087">
+            <interfaceMoniker
+              Id="3967f0d9-f8cb-4c96-95d4-7291162c7d2d"
+              LastKnownName="ICommand"
+              LastKnownLocation="Package2_1646.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="52bb8152-9159-45b5-9e50-5e6e811e2299"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b9e17967-f173-447e-8eb2-c382bae76613"
+              LastKnownName="CommandWithDbContextFactory&lt;TDbContext‎&gt;"
+              LastKnownLocation="Package2_1646.uml" />
+          </generalization>
+          <generalization
+            Id="ec941579-9f23-40bd-837d-76884b166f20"
+            isSubstitutable="false">
+            <classMoniker
+              Id="48ae7afa-8bf7-4b93-be86-c906b781165d"
+              LastKnownName="CommandWithDbContextFactory"
+              LastKnownLocation="Package2_1646.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="063291b3-b0d6-415a-8ef8-5a64554b7ab8"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="4e87e720-c9ce-44a5-a10d-cde16f25d6f3">
+                <referencesInternal>
+                  <reference
+                    Id="9ee9baff-6886-4ef3-b395-e47a0ab9efea"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="ee2f3099-b777-4d0c-8ac9-ebe202612b2f"
+                    name="TDbContext"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="7988dadd-f029-4bcb-9654-9d2cf900d463">
+                <referencesInternal>
+                  <reference
+                    Id="2029c815-9e15-460a-aa13-6be49c0cc0c8"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) ParameterIdentifier%3D1"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="ab52b80c-a7a0-4a99-8d2e-e95c5bfdcbd5"
+                    name="TEntity"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="e0232e04-df62-49d6-8ca6-858cfe2dc0bf">
+                <referencesInternal>
+                  <reference
+                    Id="747a3bed-c8a6-4bc1-a270-600ef6906814"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) ParameterIdentifier%3D2"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="5babb522-fb21-482b-9da7-709594a44d66"
+                    name="TId"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="3976d6a6-a418-42cd-bcfe-99c4353f8610"
+            name="_entityToUpdate"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="acfad68f-6c78-4dce-ac31-6546dfe55d19"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) Member%3D_entityToUpdate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3b100c10-c7ea-430a-b36b-fa422054f0f9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c23ca86-d3c8-47b8-9697-7f0a36603568">
+                    <propertyInstance
+                      Id="10d6787b-04d0-49ae-a678-712180c836ab"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba093c88-5a75-402b-a3b9-a54bd1e2cd9b">
+                    <propertyInstance
+                      Id="79db9208-7b09-49d5-92f7-5c691eeeda3a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cab1a7ec-ddc7-4aac-a920-a58f94ba4d21">
+                    <propertyInstance
+                      Id="c6aaabba-8d63-4019-a221-91dcd849947f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="129aec56-cd25-4733-bbb5-f572c743a738">
+                    <propertyInstance
+                      Id="a3a1e4fd-e61e-4d0b-98f5-7e22f8ba4de7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecbb019e-04c8-4073-a8cf-94c30c154b04">
+                    <propertyInstance
+                      Id="2ad3be25-61ce-4956-9962-9b68684ec89e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ab52b80c-a7a0-4a99-8d2e-e95c5bfdcbd5"
+                LastKnownName="TEntity"
+                LastKnownLocation="Package2_1646.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="92975c90-d7b3-4340-b973-d052795c2e96"
+            name="_original"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ba7f340f-c79a-4fdc-a665-d6fef052023a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) Member%3D_original"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="95a8398d-9404-4089-ad6a-2709cf104302"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="682085ee-3e83-485e-8044-15abdc9a0ebf">
+                    <propertyInstance
+                      Id="5a1690a3-f533-4eb8-8bc3-724a580add90"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd1747ec-d282-43e1-befe-e810b8a9d011">
+                    <propertyInstance
+                      Id="8dcee67c-82e3-421b-a510-49af8ee05fd0"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5f7c2eb-23c1-4ace-b50a-1832fc3c7aac">
+                    <propertyInstance
+                      Id="ee41edb0-a5d2-4f76-a489-4e99ee086aa8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13913bd1-67ed-41fd-b46c-a86865e11a82">
+                    <propertyInstance
+                      Id="aad39f3c-1a92-4bdf-a26c-89cd191275af"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91944191-e08a-4ec3-adb2-162f63964614">
+                    <propertyInstance
+                      Id="209b9dbf-40d6-48ff-b2bf-35c668832802"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ab52b80c-a7a0-4a99-8d2e-e95c5bfdcbd5"
+                LastKnownName="TEntity"
+                LastKnownLocation="Package2_1646.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2d7d2460-033d-48c6-becd-c3cd93017a92"
+            name="UpdateCommand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bb2415d0-ee72-407f-8528-0e53287cb7ca"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) ParameterIdentifier%3D1)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d2b1dd37-8034-4e25-927a-34a75edb2758"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6c5c314-dc8e-4034-ba84-1f201f39c984">
+                    <propertyInstance
+                      Id="13f09b32-b81f-451f-b834-2074b3054cc2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4960d61-d6b8-49bd-8838-75fdc31b36c5">
+                    <propertyInstance
+                      Id="f1aee957-02ef-44f1-b0b9-aee5a763fc7c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8126cf8e-f752-4a0d-9afe-d763a6e60caa">
+                    <propertyInstance
+                      Id="3e8d4371-81ca-4fe9-b7a4-ef43689cb8f4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52262fca-44ea-4ee1-9fd0-6489357ad2f7">
+                    <propertyInstance
+                      Id="65ae8a43-7324-4ade-bb58-09a385e68032"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1cdf26c-b9e4-45a2-b771-d9a513f35b69">
+                    <propertyInstance
+                      Id="2f60bca8-d4b5-41d6-8218-fb1e0098a8b6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c144840f-8260-4689-a130-89d171521682">
+                    <propertyInstance
+                      Id="8f2b18f5-838a-4f43-96f9-bad0199b201b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="de1a993b-16e1-486d-8bbe-c5699aee7ec9"
+                  name="entityToUpdate"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="194d6e75-dcab-4db5-bccd-c3dcfb28e58b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) ParameterIdentifier%3D1)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3DentityToUpdate"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ab52b80c-a7a0-4a99-8d2e-e95c5bfdcbd5"
+                      LastKnownName="TEntity"
+                      LastKnownLocation="Package2_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4d6445aa-91c0-4abd-9b6c-0fef827711df"
+                  name="dbContextFactory"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="31de6be9-b4e1-40cf-a0e2-8217c233c689"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) ParameterIdentifier%3D1)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3DdbContextFactory"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="27c1a6d4-2d50-4138-84a3-2e29b944aba6"
+                      LastKnownName="ICommandDbContextFactory&lt;TDbContext‎&gt;"
+                      LastKnownLocation="Package3_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6ed6cd6b-a0a4-4b29-8b37-af67bd654c60"
+            name="Do"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="08f572a8-e2cf-4e38-aaae-1d166393f16f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) Member%3DDo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4c8895bf-d3a7-4b57-87b7-cfda3102a52c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1735ce64-15fd-47d5-8fd7-243f1ae17f5d">
+                    <propertyInstance
+                      Id="a38b1a94-42ca-4275-a2d1-178c66f5bf6e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9840d936-6e2a-4b3d-8953-d4e6630580cf">
+                    <propertyInstance
+                      Id="8d6e9772-5523-4909-b6ea-25cd501d87c6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8cc342bd-181a-4a7d-814e-fba28412875d">
+                    <propertyInstance
+                      Id="f180fd77-851e-43ef-8846-115cc0a746be"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fc55172-57d8-4d61-843a-d3239e68398a">
+                    <propertyInstance
+                      Id="aac1445f-8b0b-4459-a809-d16168f4236a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff1ee825-8e18-4b94-a3f6-95d05904fcf5">
+                    <propertyInstance
+                      Id="4c4ae015-08ae-4714-80b4-1c615aee44ff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a4e9603-4343-4dca-b48f-6b76a151427f">
+                    <propertyInstance
+                      Id="cf38633d-7ca6-4c58-834d-4334216ea10e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="d0757bc9-a78d-4e57-a8ec-0a410b82d0a6"
+            name="Undo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="62b6bd89-2b61-4e8d-857b-4579ff057d04"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DUpdateCommand GenericParameterCount%3D3) Member%3DUndo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3788796e-571b-42a7-b402-4914acd9f224"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5be5cda-8b22-4f4e-95e2-acaee9c03b0a">
+                    <propertyInstance
+                      Id="95119cb2-94a5-42fe-9f32-1ee292ddab9f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ca3372f-711e-4398-86c5-5084fc435c75">
+                    <propertyInstance
+                      Id="f07e0d18-65d9-4fbb-8bda-307e11c9e0dc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f963350-b660-44f2-b676-144a4e57b73a">
+                    <propertyInstance
+                      Id="7df1cd4f-ef56-4e19-885a-6f56dd557e64"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b64f68e3-6d02-43e6-af95-5ba4a7298104">
+                    <propertyInstance
+                      Id="d5023395-a13c-45a5-b76b-6335123ad685"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2d18e50-8ae1-4827-be03-7453cc2838bc">
+                    <propertyInstance
+                      Id="bae0a600-bee2-4e44-9b9a-21b70776b64d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea04df25-9367-411f-90ff-08e11ab805c2">
+                    <propertyInstance
+                      Id="af1c9fc5-81d8-42bf-b456-4e050b860c60"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a22a02fe-933e-4474-965b-a793945516fa"
+        name="DeleteCommand"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="79481790-80b8-4e76-b646-0c82a6f06ce4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="71a10745-c67e-4b6a-b5b9-5b2fafdf24c4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="30251317-42d6-4976-9df4-080679089224">
+                <propertyInstance
+                  Id="0cfb4a88-3887-456c-bfde-1072cee949ed"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="767b59cd-1c0b-46ed-a6cb-db641279afe5">
+                <propertyInstance
+                  Id="0607d938-cc4e-49f8-b6a8-3c9ff922c18b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="993d7ec2-45f5-4994-803d-1cf3dc99b67d">
+                <propertyInstance
+                  Id="8b1c5fc6-ab2d-40f8-9104-5c972fb8c9f3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c118d29c-6110-483c-88ee-23e2da2b668b">
+                <propertyInstance
+                  Id="a3c751b1-1b63-4cfe-bb07-0aa7fa22f49b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e57a0803-4bf4-4925-bfd7-d3262dc6c399">
+                <propertyInstance
+                  Id="6080da9f-a7ca-4054-99c7-f108a16cecac"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="9eb317d6-3816-48e5-a1e2-a8ac957ba3c0">
+            <interfaceMoniker
+              Id="3967f0d9-f8cb-4c96-95d4-7291162c7d2d"
+              LastKnownName="ICommand"
+              LastKnownLocation="Package2_1646.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="5f8f6d81-5c1e-4fe0-84ef-22787655c5b3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b9e17967-f173-447e-8eb2-c382bae76613"
+              LastKnownName="CommandWithDbContextFactory&lt;TDbContext‎&gt;"
+              LastKnownLocation="Package2_1646.uml" />
+          </generalization>
+          <generalization
+            Id="53674c2f-b8d8-4872-aba3-f3d220ad733f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="48ae7afa-8bf7-4b93-be86-c906b781165d"
+              LastKnownName="CommandWithDbContextFactory"
+              LastKnownLocation="Package2_1646.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="1bb2fc2f-0ccf-4dd3-a3f4-46560ee0706a"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="39ec021e-ec16-4d40-85ce-a7b587b4c3b3">
+                <referencesInternal>
+                  <reference
+                    Id="67f2dd7b-61db-4444-a374-1a7a16079351"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="3363f4a1-51b1-447c-8ebd-be76a96d2a63"
+                    name="TDbContext"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="c716793e-b76c-43f8-9181-d5dd6d72f242">
+                <referencesInternal>
+                  <reference
+                    Id="6bc43c78-9b8d-4151-9d86-262b784cc350"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) ParameterIdentifier%3D1"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="3aa1f6eb-be71-42c1-8f7a-08872ef83d68"
+                    name="TEntity"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="f88e6bd5-4e80-45d4-b53c-7c7c59c4bd40">
+                <referencesInternal>
+                  <reference
+                    Id="eadd3b7d-99fb-4733-b384-c78deaaedfd7"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) ParameterIdentifier%3D2"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="105e9753-e977-4ffa-960a-f508bd0e71ba"
+                    name="TEntityId"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a329646d-2ad3-437d-bff0-509bff8951aa"
+            name="_id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c342c9c7-33cf-420b-bf10-5b96745a7b66"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) Member%3D_id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e754cccc-8817-47e2-9d29-d209268261ca"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0504ba2-4be9-4d7a-9e13-3be544d1eed7">
+                    <propertyInstance
+                      Id="b3ce45bc-f989-47f7-b710-c3e3d9b11e90"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f7c2c04-114f-409f-b87d-200a4e05a591">
+                    <propertyInstance
+                      Id="987d7e5f-1571-4fe8-9198-a4d9f9b3dc91"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07c472d9-c7b1-4a67-98e6-58520a32de85">
+                    <propertyInstance
+                      Id="8be33f4b-2ceb-4cde-a500-699ddd174d96"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bcd4de83-dbdb-4ff2-868d-3f9e3698087e">
+                    <propertyInstance
+                      Id="b0a7629c-06e7-4133-be02-1fe3be616212"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38d0e789-f6c3-4eba-9432-92f6b3a8e417">
+                    <propertyInstance
+                      Id="bbf61099-d0c9-407c-bb7f-44e010b48d91"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="105e9753-e977-4ffa-960a-f508bd0e71ba"
+                LastKnownName="TEntityId"
+                LastKnownLocation="Package2_1646.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a4b723f1-ef2b-49d7-a65e-b098a3ff0577"
+            name="_original"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b7ad2411-2a7a-4c74-bf40-9c515d637fcb"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) Member%3D_original"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="569f7573-709b-4dac-a698-cf2ee7e7ca1f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5ee9426-ef6f-4604-9d29-b942091631c5">
+                    <propertyInstance
+                      Id="59893585-1fae-4a35-ab1e-20817e7d4e93"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="297eef63-35ae-4737-b76d-2644998f71fe">
+                    <propertyInstance
+                      Id="fd01ee65-4866-4fc6-b846-890ce0e09a1b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86f83e8d-7cbc-4150-afd4-abfc12b9840a">
+                    <propertyInstance
+                      Id="16dfbe31-8606-441e-a9d6-e30077c1f6b8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d538121c-2a67-47f7-b29b-7bb2bd631c2b">
+                    <propertyInstance
+                      Id="0448e14d-038f-45cf-bea1-0e13637c0358"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e8e5d15-ba14-467e-b30e-f975338b910d">
+                    <propertyInstance
+                      Id="b74fc5e6-405a-4802-83d3-e65690580426"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="3aa1f6eb-be71-42c1-8f7a-08872ef83d68"
+                LastKnownName="TEntity"
+                LastKnownLocation="Package2_1646.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="57c3aec7-17a3-4e61-b865-0f99ab2f0ace"
+            name="DeleteCommand"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a5bd5cf6-fad8-4348-b147-dbcb20c2ed81"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) ParameterIdentifier%3D2)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="98b35aeb-4f8c-4687-8089-e97d94310ebe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="175a211f-e309-4424-8927-08cd1a736328">
+                    <propertyInstance
+                      Id="8bd76253-67f9-44e0-8313-aa423c1a5598"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0b74752-dc82-4e7d-a49a-dc2968f566bc">
+                    <propertyInstance
+                      Id="f345af2f-85c9-466e-9709-f560184a4ec7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d07b2dd9-ca8e-4909-a21a-343f030ab048">
+                    <propertyInstance
+                      Id="471d1fbb-1938-4d3d-9e14-52d254d441e8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="645e60d0-efe3-41c4-a173-739f4827d373">
+                    <propertyInstance
+                      Id="474f1fb2-6e28-4c4d-b6d3-49f782c08a66"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e29798de-2385-4236-a973-c2531998742a">
+                    <propertyInstance
+                      Id="d058a4e9-fc9f-4d85-af31-b7794281f7f0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f4f87d5-3188-4ded-9b26-53141f0fd963">
+                    <propertyInstance
+                      Id="07b73e15-3b4a-4817-8742-050fcc7bfc68"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cce73bee-cc4b-4bf1-920d-b1ce43ed1f51"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b320d278-e5f6-4ce4-8f64-33c54d9ae76a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) ParameterIdentifier%3D2)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="105e9753-e977-4ffa-960a-f508bd0e71ba"
+                      LastKnownName="TEntityId"
+                      LastKnownLocation="Package2_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3531b820-2994-4a7c-ad9a-667d2d76c299"
+                  name="dbContextFactory"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0e864180-fc5e-4a60-beba-70e57ba24590"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) ParameterIdentifier%3D2)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3DdbContextFactory"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="27c1a6d4-2d50-4138-84a3-2e29b944aba6"
+                      LastKnownName="ICommandDbContextFactory&lt;TDbContext‎&gt;"
+                      LastKnownLocation="Package3_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="79a81ed7-c5fb-4857-8d76-b9a6dff2c5ef"
+            name="Do"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="04b164c9-559f-4764-859f-8257be3bfaf8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) Member%3DDo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9c326fc2-ab6f-42c2-8508-1aa77727abd1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ad99633-29b0-4f81-bdc0-dbc5d4166e71">
+                    <propertyInstance
+                      Id="47741bff-f568-4e75-a9ed-dcd882051ea5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f0475ad-2c8d-49da-9707-70ef56e001b4">
+                    <propertyInstance
+                      Id="37bb7ade-014c-4c4f-a24c-bbe112d4bb41"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1860fe6-9eee-48ad-98dc-89ba3339acc8">
+                    <propertyInstance
+                      Id="9e819a88-8a30-4d5a-9b5a-5239a3521e78"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f03b4d0d-2df7-4fc8-83a7-0bbcc9b552a1">
+                    <propertyInstance
+                      Id="91018c78-1211-4a15-9e27-d0101d08e2c1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3b8d06c-c829-4627-ade6-c7a8a86e63a0">
+                    <propertyInstance
+                      Id="c443ca95-0495-4f39-9c84-5a0010c8cab7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="465f8e13-fd16-4214-894c-13ae2d123a27">
+                    <propertyInstance
+                      Id="46ebca55-f2ab-4920-9897-bd4849ee5154"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="2449eba7-401e-48bd-88ad-ca2899820534"
+            name="Undo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f5374c1f-ab21-46c2-9ed8-e1ba06ae7047"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommand GenericParameterCount%3D3) Member%3DUndo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c280c5c7-9f82-4828-bff0-f575ccd6bdde"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7dd1bf2a-6db6-4396-9953-5590b5b2c7da">
+                    <propertyInstance
+                      Id="84583b2e-20ad-4706-826c-57b461bccc11"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79e2b8f2-7913-41a9-9509-48433d7b5870">
+                    <propertyInstance
+                      Id="751feda7-7cdf-4e36-89e2-f9c6060eb2ad"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="399a6fea-1728-4a53-8293-7892acd49f28">
+                    <propertyInstance
+                      Id="f0e50562-860e-46d1-9e12-439ed95a8c71"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73a63063-1428-4062-bfea-be9777dab9b4">
+                    <propertyInstance
+                      Id="11a96072-9538-4f02-84db-be57980caaa3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89e3ab8c-47be-456d-a567-e622a443ac8d">
+                    <propertyInstance
+                      Id="51295307-2efa-49cb-9872-930a13ceebdf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="529a4aab-823c-4d1a-8eeb-29258efe9881">
+                    <propertyInstance
+                      Id="d3add453-c3ef-4864-9ee4-00f50bd5fa8e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ce50f468-24b9-41e8-ba9a-5b9d39b24375"
+        name="DeleteCommandWithIdentityInsert"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="acddf9c2-32e1-45ea-ab01-8d9a3c51614a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5ec3e823-b95b-473e-adea-11e39f8e1994"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="513f71c1-93e7-4402-9adc-ec51032c19b0">
+                <propertyInstance
+                  Id="83d2300c-733f-4590-a985-af9ea8bff347"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3b48338d-5eb4-4722-97bf-0d58eb331cc8">
+                <propertyInstance
+                  Id="91c16ca0-7914-4b62-9a88-6a545d5730bd"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="55004c40-f174-4daa-8eb8-9bef71a42b5c">
+                <propertyInstance
+                  Id="8d72327f-6b1d-4178-88e9-adca1bd45577"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5272970d-48ec-43b6-980e-65c5c2152056">
+                <propertyInstance
+                  Id="9ec1c695-b54a-4482-ab27-6d834e1ee30f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6660a3d2-e1c1-4321-8a08-961862c4c65b">
+                <propertyInstance
+                  Id="0d03f687-585f-47e3-a3ac-ef5f6a8070e9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="b1dbfe28-6544-4892-8424-819afd5a9e12">
+            <interfaceMoniker
+              Id="3967f0d9-f8cb-4c96-95d4-7291162c7d2d"
+              LastKnownName="ICommand"
+              LastKnownLocation="Package2_1646.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="386ce8c5-b1c4-4fa4-bd5b-b95b0ec24869"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b9e17967-f173-447e-8eb2-c382bae76613"
+              LastKnownName="CommandWithDbContextFactory&lt;TDbContext‎&gt;"
+              LastKnownLocation="Package2_1646.uml" />
+          </generalization>
+          <generalization
+            Id="e00a5360-9cc4-416a-9112-784b75532661"
+            isSubstitutable="false">
+            <classMoniker
+              Id="48ae7afa-8bf7-4b93-be86-c906b781165d"
+              LastKnownName="CommandWithDbContextFactory"
+              LastKnownLocation="Package2_1646.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="b8e9f44c-f2c8-4f28-bf2b-6221960ed084"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="95af7911-71e8-4d5e-8a2f-a086b198c173">
+                <referencesInternal>
+                  <reference
+                    Id="a1549f8a-5d99-43da-8f7f-ecc551a51b85"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="2372ebbc-9561-4d94-a983-a58c4cfa247d"
+                    name="TDbContext"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="bedecf69-04f9-410c-8dc6-25c9fea840db">
+                <referencesInternal>
+                  <reference
+                    Id="230d47b0-da40-4630-8d89-bbaaafc3ba6e"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) ParameterIdentifier%3D1"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="0d685798-e816-4f1f-944d-5bb2d91a6c15"
+                    name="TEntity"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="7d8d29a0-f3be-463d-88f5-ba4c9ff4bf47">
+                <referencesInternal>
+                  <reference
+                    Id="1e58804c-cf76-4d61-9ad2-79fcb082c8f5"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) ParameterIdentifier%3D2"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="b6fbed5f-722d-4f2e-a598-6a3a5d7ab4cc"
+                    name="TEntityId"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="92db2b64-7f88-4678-90ff-5fc14be0708b"
+            name="_id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="08c30ebb-8e10-443f-b2b3-22e9a82c9b40"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) Member%3D_id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f00e9643-c3e8-452d-8faf-789e4af21c8e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98b537b5-e8cd-49ef-96d2-a7dcd494bea0">
+                    <propertyInstance
+                      Id="28792a80-76eb-4a90-a9d9-3cf503b27181"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c5c8612-e312-408c-ac5f-2aeecc0134b3">
+                    <propertyInstance
+                      Id="ada9705d-994c-455a-9cb9-acadd9a9e171"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bfa9637-4bad-4924-858c-62a25d7fb11a">
+                    <propertyInstance
+                      Id="f17c28d6-55a5-4685-af32-a783d3d45071"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4ce3e33-6e81-4868-8a82-7f72af967414">
+                    <propertyInstance
+                      Id="dd5f7a83-2171-4212-9e70-501ed4aa2b89"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a40688e-cf49-4049-988f-dabd235ecf79">
+                    <propertyInstance
+                      Id="80f897df-8121-4e7b-81c2-218b4d9eb365"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b6fbed5f-722d-4f2e-a598-6a3a5d7ab4cc"
+                LastKnownName="TEntityId"
+                LastKnownLocation="Package2_1646.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a21fcaa5-3f9b-44db-9dca-ee131ecedc44"
+            name="_original"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fd11562d-b336-40a6-9355-aeb022318307"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) Member%3D_original"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3aaa4f80-934d-4b3f-9309-1c628770de1c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2166156-f6e0-43bb-8a00-2e0a84bb177a">
+                    <propertyInstance
+                      Id="4a6e6930-aea5-4276-bb2d-68c91df6e465"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f11336b-e2be-4d26-836c-331f0af03666">
+                    <propertyInstance
+                      Id="8057ab1a-fad3-4ebe-95b3-3ef523e8a318"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42c0bbb0-3554-4477-994c-4437f0f5708e">
+                    <propertyInstance
+                      Id="d4ada016-68c0-45fe-9a79-39cf3a0abeb0"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28e3b285-531a-4337-8a8d-dcbcf454f8d5">
+                    <propertyInstance
+                      Id="fada100d-259d-4c01-8b2a-7c0aa71ed88b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17f9b971-e77d-432e-baec-8206f6460a39">
+                    <propertyInstance
+                      Id="bc59a69e-dd97-471c-8112-00db8c0e891e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0d685798-e816-4f1f-944d-5bb2d91a6c15"
+                LastKnownName="TEntity"
+                LastKnownLocation="Package2_1646.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7300e970-8ce0-4fee-8a99-138dbc9db940"
+            name="DeleteCommandWithIdentityInsert"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="efc96e7c-00e3-4306-8bde-ea0836448f31"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) ParameterIdentifier%3D2)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="23bc2609-742e-49f2-8add-70ac37087eea"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9b6a00e-bd7e-4be9-b4a9-13303dc1e313">
+                    <propertyInstance
+                      Id="8442e95d-d364-4122-bcb6-a5b05f1b3b25"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e35569a6-4c6c-4da4-af43-07e3ba57f0a3">
+                    <propertyInstance
+                      Id="937055e3-4be2-4fc8-9004-8b37985fb057"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66d2cd94-5cb0-4997-b9e2-f3fb10160415">
+                    <propertyInstance
+                      Id="c1bf8a23-3d5b-45f5-a28f-068bcb961fa5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca74874a-5855-4ea0-bd22-f1b8ab7aa019">
+                    <propertyInstance
+                      Id="60667993-db6c-4ea0-9e71-7c3744fbebfb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f980693a-7af7-4a23-959c-f99c21ab0fff">
+                    <propertyInstance
+                      Id="b23b2362-980f-4b86-af02-34aa632a5883"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82471693-c6fb-4192-b4fb-8ffc4bfd203a">
+                    <propertyInstance
+                      Id="dda37879-69ce-45a0-8e66-827df701089c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ccc60958-3f86-4dae-8378-86dbdb8793be"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ca50e656-385b-45c4-bc5a-dfcb0727483c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) ParameterIdentifier%3D2)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b6fbed5f-722d-4f2e-a598-6a3a5d7ab4cc"
+                      LastKnownName="TEntityId"
+                      LastKnownLocation="Package2_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="048171b2-60b2-4196-a258-1574441a2709"
+                  name="dbContextFactory"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fff26e87-20ef-4911-a192-fe1e5627227b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) ParameterIdentifier%3D2)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3DdbContextFactory"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="27c1a6d4-2d50-4138-84a3-2e29b944aba6"
+                      LastKnownName="ICommandDbContextFactory&lt;TDbContext‎&gt;"
+                      LastKnownLocation="Package3_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0a8e22f5-72bb-41ac-8182-c42618d4b035"
+            name="Do"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e8ef28e7-743d-4fcf-b4d2-c49246332223"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) Member%3DDo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="83528320-96d8-485c-98aa-57c940caf200"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="464fcf76-5bd7-4220-9f49-c1a29443a6eb">
+                    <propertyInstance
+                      Id="876150e9-806f-4014-91bf-49aaeafe1943"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="580c23ef-368f-4291-a7ca-2b14304818bf">
+                    <propertyInstance
+                      Id="e7c9dcc3-b728-4913-aabb-97e9a6010ccb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c35cc960-8082-4d74-8b95-a1c5910b3791">
+                    <propertyInstance
+                      Id="0cf691b2-e990-433f-a4f1-725b8269f578"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f27fc9d3-394b-4d42-ba42-998733286348">
+                    <propertyInstance
+                      Id="08d7cb4b-a95a-4d7c-bf29-c7c7daacbc7f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f248c7c-e80a-43a4-aeb2-33a9a22ff217">
+                    <propertyInstance
+                      Id="3e3b15bc-845b-4754-9d9f-3cfd373c9e19"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78d48c21-3ac6-402a-9bb3-5f0fce92d6c8">
+                    <propertyInstance
+                      Id="62842f9d-ec3d-4b6a-b929-6c74393ad66c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="0afe0ad3-e5d2-45f6-8c3b-a80afe181b6c"
+            name="Undo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fce8bd33-9518-446e-b3ae-5c73aa668662"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DDeleteCommandWithIdentityInsert GenericParameterCount%3D3) Member%3DUndo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="975ed4e2-0b92-4ad8-a8a0-000619d02fda"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f17001b-48af-449d-aef7-1416efe0df3a">
+                    <propertyInstance
+                      Id="6314975a-efce-445a-93ed-debdad561722"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="373d463d-5b0e-4075-b768-5e546d464e10">
+                    <propertyInstance
+                      Id="593b7a10-84d6-4505-a010-45dbc0d9bb55"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e71892b0-3ed2-4dcd-b0e7-ff0a850ed6ec">
+                    <propertyInstance
+                      Id="dfbcfbb6-6d94-4a16-a776-6e44454ef6f5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5770da74-8487-497e-9f49-b90ec4d3e77c">
+                    <propertyInstance
+                      Id="9270ae02-7bef-41ef-9b17-78c5c2611aae"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eca47668-d811-4c9c-bf01-3f72a8b7fd7e">
+                    <propertyInstance
+                      Id="fcebb5ae-707a-4f73-b1ea-3c426aa3c404"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c44d551-48b4-4370-93a1-baaa6acbc802">
+                    <propertyInstance
+                      Id="8f9a7f7c-d4a3-4e9c-b77c-c297bfdb42c5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fcd61e5a-fe6e-4895-b7a4-6ee961fb5d26"
+        name="CommandFacade"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a6dfc0cc-e488-4c90-ba72-10a522d5501e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3DCommandFacade"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5fb5286f-b673-465a-8a58-77bab63a7141"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8c9dc4d-1f0d-49b3-96d9-d01d05d90848">
+                <propertyInstance
+                  Id="fe007c29-80dd-4cd8-9b22-d3d8628288b7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="157e2d1e-ade8-4449-849a-541f7e8c554f">
+                <propertyInstance
+                  Id="5ec0a255-05ba-4111-9006-b9c4e6d39fcb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7436b9b7-662e-4004-871d-ae9926cba310">
+                <propertyInstance
+                  Id="3a920360-7a43-4f3a-b66d-3d4de8ef565c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7038fbb7-cd4d-44e8-8fab-fc518f60ed3e">
+                <propertyInstance
+                  Id="8509be73-9351-4a3f-878b-1965b955894c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a44caf92-7c6a-4083-aa1e-03abd5553cc9">
+                <propertyInstance
+                  Id="45c28176-e45d-4648-811e-1611b2e56133"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="858e0081-1f9e-4c30-ab71-fd897ec9e123">
+            <interfaceMoniker
+              Id="3967f0d9-f8cb-4c96-95d4-7291162c7d2d"
+              LastKnownName="ICommand"
+              LastKnownLocation="Package2_1646.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="9f676164-6215-4293-bbf4-251c180da066"
+            name="_commands"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9e1a0a1a-3b09-4076-8fd6-7022d3bbd084"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3DCommandFacade Member%3D_commands"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a9dd2ec6-929b-462b-be44-b0aa6a2cceb7"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="770e71b3-f1ed-4705-a6c5-9d95336ce7c4">
+                    <propertyInstance
+                      Id="3143f37f-60e5-4e72-a26f-4f83fb83c10d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d44ecb75-222f-4bab-b128-4d9ca7ba942a">
+                    <propertyInstance
+                      Id="0f79b5d6-6368-41d5-a525-200569d6f7ad"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4142f89-d10b-4189-870a-3a9db057c3f5">
+                    <propertyInstance
+                      Id="642e53ba-3945-4cf8-8bca-21001b72aa33"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c677db3-1b22-4623-82d0-5f6e00b93707">
+                    <propertyInstance
+                      Id="a7d2c83a-9bf3-4804-8928-06a9020bb310"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="775ea268-e916-4f15-89cd-1fc5006c4233">
+                    <propertyInstance
+                      Id="326c8712-2f9a-4ff5-b156-0dff407efac1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="1a2520b4-7512-495c-bf4a-7f1c506bac1e"
+                LastKnownName="Stack&lt;ICommand‎&gt;"
+                LastKnownLocation="Package1_1658.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="14354ac5-e8cf-4cf4-8b45-dd490c40bbe5"
+            name="CommandFacade"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="63edd1dd-a859-4b3c-9ea1-f81f3d15d081"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3DCommandFacade Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="108a99f4-77bc-4312-90ae-60ce6e56c9de"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2122213b-808b-40a3-8291-21d752fbdb74">
+                    <propertyInstance
+                      Id="e6c03a05-30d9-44f9-a964-744c3aaba2db"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86f4ad36-cb9a-4b40-b360-e57c07fae053">
+                    <propertyInstance
+                      Id="71fd2251-4991-469c-8386-565102093152"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41ba7ee6-6ccc-4f60-bc08-9aa5c4b8dd52">
+                    <propertyInstance
+                      Id="7033f8ff-a91d-4f0e-aa03-f7d061383481"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26351460-53c3-454c-8c6c-b0d0cf17d770">
+                    <propertyInstance
+                      Id="606a35ea-408f-462d-9382-6d861613097d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a698afd-6f41-4226-8129-bd7e9d5f0ade">
+                    <propertyInstance
+                      Id="1de886b7-ff74-404f-8bb9-732f8866a00a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c072ab7-848d-46a4-8ab1-71c83c7979e6">
+                    <propertyInstance
+                      Id="3cfb545d-de44-4863-a0b0-41dbb3d1b1dd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="b083a7c8-b2d6-4c42-9779-b2b1353e7939"
+            name="Do"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f9097303-e145-494c-a36b-87049e3d3661"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3DCommandFacade Member%3DDo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="74b02c83-f85a-4751-9d9c-4140c27950e4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2576d63-e14b-4434-91cc-cacbfaacce1d">
+                    <propertyInstance
+                      Id="2b77aedd-1832-4218-97ed-5d17d5bc3173"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53ca1a50-0625-4fe5-86fe-5b4c91b49815">
+                    <propertyInstance
+                      Id="7a4ae910-4c3c-4e94-85ec-24b4df0a4e69"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="894b3d30-5544-428b-ad59-235ce451fd99">
+                    <propertyInstance
+                      Id="9b819e2d-dd64-4577-b2ec-93e669589374"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78166bc7-c916-4bbb-b7a4-ca05946791fe">
+                    <propertyInstance
+                      Id="295f99b3-3a00-4443-8cfd-a21dab6309f2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="861a305b-17ed-4b71-9b32-62a1a7881ecb">
+                    <propertyInstance
+                      Id="8e0f1e5f-4025-4247-a804-3ec86c3549de"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88c23dfa-1a1f-428e-bee3-3d8ed462a912">
+                    <propertyInstance
+                      Id="30aa94b2-ccfe-49ec-a4af-ece9c758f113"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f6fa0a6f-c162-444c-910d-50ba85909cfb"
+            name="Undo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="edfb641e-5361-4aa5-917f-fda544e9f9f9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3DCommandFacade Member%3DUndo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a75ffa20-4fd5-420f-8b13-ea82310167f5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28b2cef2-68fd-451a-bdf5-43a67e83e73a">
+                    <propertyInstance
+                      Id="100e749b-27fc-4856-8f53-7925670b8f95"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd519611-bd4d-4981-9f97-8f3ede65054d">
+                    <propertyInstance
+                      Id="7f1dbf7a-6d00-4207-89b2-7acb9b0a48ba"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de195a39-a989-4fff-8e1d-97fd5a5bfa74">
+                    <propertyInstance
+                      Id="9fbb2ec9-2a25-4ed5-8aac-008781e97614"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad57b78b-dafe-46a2-a423-9ad0d1a5d25f">
+                    <propertyInstance
+                      Id="7534bbfd-1d1b-416f-9e21-852f839aa851"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f9a1b85-a648-402f-9f77-5c7e80be3e71">
+                    <propertyInstance
+                      Id="030d5678-a2ac-4fa1-9470-198d1ccec38c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5bb0bb4-3fd8-4afd-9f2e-376b83f7a684">
+                    <propertyInstance
+                      Id="d946abc2-2817-4093-8603-de1cda3ee3f4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dbaf6c41-e98b-476b-97dd-7a5da238314a"
+        name="CommandFacadeWithDbContextFactory"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b1f9794b-0eb3-4e0e-a62d-8e743c2177b0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandFacadeWithDbContextFactory GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b3630741-c1aa-4f8a-8e76-12411b958e68"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8a113c35-e7c3-4893-a92f-1ab4926f8674">
+                <propertyInstance
+                  Id="c610087d-af50-441a-95e5-84f02595f6b6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3c3f1ec-4bdc-46fb-809c-882be9f1d4b7">
+                <propertyInstance
+                  Id="0475c02d-95a3-4165-9ad3-a95cd4694f14"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="558c71e0-c49f-4bd1-8abd-5482b27dd0b6">
+                <propertyInstance
+                  Id="bd806fc2-7e42-4a41-8f1c-71ebe4e6eaff"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3477c7c9-ddd6-425c-a88f-4ea8c8349fc8">
+                <propertyInstance
+                  Id="da1955fb-a928-420a-a697-acb80627aedf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f02c7ec7-7c57-4822-8eb1-a9a1d5b8886f">
+                <propertyInstance
+                  Id="1bb419d0-d67e-4140-9928-1a65b3135ba3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="3dc867cf-ef44-42cd-927c-4ea6ce549b3c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="fcd61e5a-fe6e-4895-b7a4-6ee961fb5d26"
+              LastKnownName="CommandFacade"
+              LastKnownLocation="Package2_1646.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="0bf25b00-2768-4564-96e7-d0f5d8e377dc"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="d5d4c479-c6f5-46e4-8fff-2cb0bfbcfda1">
+                <referencesInternal>
+                  <reference
+                    Id="566843ae-e475-4878-9020-8d9f8fbfb1ce"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandFacadeWithDbContextFactory GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="81f810df-0a93-490a-9c09-9c7eb44293dd"
+                    name="TDbContext"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8196add4-61b6-4a2e-9df8-479daaa2df5d"
+            name="_dbContextFactory"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="30a5c6cf-133b-46e6-a9fc-e5ff4e0bc534"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandFacadeWithDbContextFactory GenericParameterCount%3D1) Member%3D_dbContextFactory"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="47cf858f-540b-4083-81cb-77f7a657baaf"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d0d2950-5b5d-48e2-b1b4-0fdd5ca896a6">
+                    <propertyInstance
+                      Id="fc3de27c-2e35-4f81-9ce1-ce0cab952977"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75df8d51-6083-453a-b31b-7c37ca788776">
+                    <propertyInstance
+                      Id="67473aa2-53b2-4dab-830f-37814dff2794"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2a1ca07-d2cf-4da9-b8fc-2cb820eb23c9">
+                    <propertyInstance
+                      Id="65c3ee93-9e9c-4c03-86d7-45f41907d5f6"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4712285-0c93-4ff7-a158-4215afb30504">
+                    <propertyInstance
+                      Id="f081325f-96d5-4cba-bdfc-7eac1140aa8b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45eb7668-96e3-4e39-b69f-11cbf8b8bd96">
+                    <propertyInstance
+                      Id="628eb165-3eb0-4589-8355-ae17732b7de2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="27c1a6d4-2d50-4138-84a3-2e29b944aba6"
+                LastKnownName="ICommandDbContextFactory&lt;TDbContext‎&gt;"
+                LastKnownLocation="Package3_1646.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="03b6740b-3c5e-4c06-99f5-fbfea352a0ff"
+            name="CommandFacadeWithDbContextFactory"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="41fe3d72-d46b-4377-8c6e-0af85a5b6ffe"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandFacadeWithDbContextFactory GenericParameterCount%3D1) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandFacadeWithDbContextFactory GenericParameterCount%3D1) ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b1368138-e347-42da-85b7-4e0b0e47eb99"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9eee579-269c-49c1-af29-21beed94f9bb">
+                    <propertyInstance
+                      Id="fd8f7553-4e97-499a-bfb2-a160fa080137"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d74bc7ac-a279-421e-8fd2-fcf1f7bb5e64">
+                    <propertyInstance
+                      Id="96aab8ed-b532-4949-be3d-2e66638393a4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e017a436-0c10-4310-b060-4389f29acd4e">
+                    <propertyInstance
+                      Id="6f9c895f-3ad0-414c-8b77-b4d10816830f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="408eea13-38c3-4b86-9d70-e46f45521da2">
+                    <propertyInstance
+                      Id="51f2e4c6-59cc-49c1-8970-7a3e7697de38"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="094a9bef-8401-43d0-8329-ef1514e1175a">
+                    <propertyInstance
+                      Id="b292a0d7-06a9-4ef0-9c29-b57b87abd958"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf21b6f7-c99d-467e-b6d7-7f7ed71903fe">
+                    <propertyInstance
+                      Id="da2a6734-07af-4fd7-b779-390d47a585b9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a55208f-41e8-4ae5-925a-42d0b45e360b"
+                  name="dbContextFactory"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="92c0a46d-f031-4210-a219-af7f7a47d70f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandFacadeWithDbContextFactory GenericParameterCount%3D1) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands.DbContexts Type%3D(Name%3DICommandDbContextFactory GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandFacadeWithDbContextFactory GenericParameterCount%3D1) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3DdbContextFactory"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="27c1a6d4-2d50-4138-84a3-2e29b944aba6"
+                      LastKnownName="ICommandDbContextFactory&lt;TDbContext‎&gt;"
+                      LastKnownLocation="Package3_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4e7ee020-eabb-4925-9d60-c0a5a440cc65"
+            name="GetDbContext"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8175446d-1c1f-4bde-ba8c-d1db3375fb7c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FWuss%2FCims%2FDevelopment%2FCimsReloaded%2FCims.Commons%2Fbin%2FDebug%2FCims.Commons.dll Namespace%3DCims.Commons.Commands Type%3D(Name%3DCommandFacadeWithDbContextFactory GenericParameterCount%3D1) Member%3DGetDbContext"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c69c8cf5-7965-4996-8b49-cdeecbd7261d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d90bab65-9ced-403b-9bb9-e55279d88631">
+                    <propertyInstance
+                      Id="ab5e1861-18f8-4a87-a58e-00101efbe331"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc194c32-9263-4db2-b5e2-a69d17cfc20e">
+                    <propertyInstance
+                      Id="2e65cbfc-5ad1-44ee-b168-e37defda1bae"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55331396-3746-43d3-b927-8923eb90f43f">
+                    <propertyInstance
+                      Id="050b1cb1-9610-4819-8a70-46fa8c932aed"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="971f77a2-7012-40ef-80fd-f2874f02c52f">
+                    <propertyInstance
+                      Id="a3c9d090-ab6a-4e4d-aaae-80ace592df89"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd854668-7e9e-4865-b808-27acacecbb92">
+                    <propertyInstance
+                      Id="ed86014d-4dc5-4311-9c70-009192fb04ba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a9e995e-aa5e-4511-9c8a-5496c9e2508d">
+                    <propertyInstance
+                      Id="82337de6-b8a6-498f-844e-a64dd235b5a4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1110d487-7801-4655-b654-fc71ec74ca9c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="81f810df-0a93-490a-9c09-9c7eb44293dd"
+                      LastKnownName="TDbContext"
+                      LastKnownLocation="Package2_1646.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
